@@ -19,7 +19,7 @@ color_codes = {
 
 @app.route("/")
 def main():
-    color = random.choice(["pink","blue","yellow"])
+    color = random.choice(["red","green","yellow"])
     return render_template('hello.html', name=socket.gethostname(), color=color_codes[color])
 
 @app.route("/test")
